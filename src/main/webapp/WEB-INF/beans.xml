@@ -7,22 +7,22 @@
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
     
-<!--     <bean class="org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer"/> -->
-<!--     <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer"/> -->
-<!--     <jaxrs:server id="BookStoreService" address="/vendors"> -->
-<!--         <jaxrs:serviceBeans> -->
-<!--        		<ref bean="vendorBean" /> -->
-<!--         </jaxrs:serviceBeans>      -->
-<!--         <jaxrs:providers> -->
-<!--             <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/> -->
-<!--         </jaxrs:providers> -->
-<!--         <jaxrs:schemaLocations> -->
-<!--         	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorLineRepresentation</jaxrs:schemaLocation> -->
-<!--         	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorLineRequest</jaxrs:schemaLocation> -->
-<!--         	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorRepresentation</jaxrs:schemaLocation> -->
-<!--         	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorRequest</jaxrs:schemaLocation> -->
-<!--         </jaxrs:schemaLocations> -->
-<!--     </jaxrs:server> -->
+    <bean class="org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer"/>
+    <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer"/>
+    <jaxrs:server id="BookStoreService" address="/vendors">
+        <jaxrs:serviceBeans>
+       		<ref bean="vendorBean" />
+        </jaxrs:serviceBeans>     
+        <jaxrs:providers>
+            <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+        </jaxrs:providers>
+        <jaxrs:schemaLocations>
+        	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorLineRepresentation</jaxrs:schemaLocation>
+        	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorLineRequest</jaxrs:schemaLocation>
+        	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorRepresentation</jaxrs:schemaLocation>
+        	<jaxrs:schemaLocation>com.ebook.service.vendor.representation.VendorRequest</jaxrs:schemaLocation>
+        </jaxrs:schemaLocations>
+    </jaxrs:server>
     
     <bean id="VendorBean" class="com.ebook.service.vendor.resource.VendorResource"/>
 </beans>
