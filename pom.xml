@@ -43,6 +43,11 @@
 			<artifactId>spring-web</artifactId>
 			<version>5.3.12</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>5.3.12</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
 		<dependency>
 			<groupId>c3p0</groupId>
@@ -54,6 +59,11 @@
 			<artifactId>webapp-runner</artifactId>
 			<version>8.5.11.3</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.postgresql</groupId>
+		  <artifactId>postgresql</artifactId>
+		  <version>42.2.24</version>
 		</dependency>
 	</dependencies>
 	<build>
